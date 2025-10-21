@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: white;
+            margin: auto;
+            padding: 5vw;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+            width: 300px;
+             background: linear-gradient(to right,rgba(0, 255, 179, 0.784) 25%,rgba(47, 255, 0, 0.612) 50%, rgba(0, 255, 242, 0.596) 75%, rgba(0, 128, 109, 0.601)) 100%;
+            
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <h2>Diabetes Prediction</h2>
+
+        <label for="Pregnancies">Pregnancies</label>
+        <input type="number" name="Pregnancies" required>
+
+        <label for="Glucose">Glucose</label>
+        <input type="number" name="Glucose" required>
+
+        <label for="BloodPressure">Blood Pressure</label>
+        <input type="number" name="BloodPressure" required>
+
+        <label for="SkinThickness">Skin Thickness</label>
+        <input type="number" name="SkinThickness" required>
+
+        <label for="Insulin">Insulin</label>
+        <input type="number" name="Insulin" required>
+
+        <label for="BMI">BMI</label>
+        <input type="number" step="0.1" name="BMI" required>
+
+        <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+        <input type="number" step="0.01" name="DiabetesPedigreeFunction" required>
+
+        <label for="Age">Age</label>
+        <input type="number" name="Age" required>
+
+        <button type="submit">Predict</button>
+        
+
+    </form>    
+</body>
+
+</html>
