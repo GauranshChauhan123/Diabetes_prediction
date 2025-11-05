@@ -6,8 +6,8 @@ import pandas as pd
 
 
 app = Flask(__name__)
-model = pickle.load(open('models/model (1).pkl','rb'))
-scaler = pickle.load(open('models/scaler (2).pkl','rb'))
+model = pickle.load(open('models/random_forest.pkl','rb'))
+scaler = pickle.load(open('models/random_forest_scaler.pkl','rb'))
 @app.route('/')
 def home():
      return render_template('index.html') 

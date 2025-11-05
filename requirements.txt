@@ -1,2 +1,6 @@
 pandas
 numpy
+xgboost
+scikit_learn
+imblearn
+flask
