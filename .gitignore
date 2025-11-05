@@ -3,11 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
-env/
-venv/
-ENV/
-.venv/
+
+
+
 
 # Flask instance folder
 instance/
@@ -26,4 +24,4 @@ instance/
 .DS_Store
 Thumbs.db
 
-
+venv/
