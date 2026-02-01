@@ -1,27 +1,62 @@
-# Byte-compiled / optimized / DLL files
+# Python cache files
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
 
+# Virtual environment folders
+venv/
+env/
+.venv/
 
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
 
+# Environment variable / configuration files
+*.env
+.env/
 
+# Model & ML files
+*.pkl
+*.joblib
+models/
+*.h5
+*.sav
 
-# Flask instance folder
-instance/
+# Byte-compiled / optimized / DLL files
+*.so
 
-# Pytest cache
-.pytest_cache/
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Logs
 *.log
 
-# Editor and IDE settings
+# VSCode / PyCharm / IDE
 .vscode/
 .idea/
 
-# OS files
+# OS system files
 .DS_Store
 Thumbs.db
 
-venv/
+# Flask sessions
+instance/
+*.db
+
+# Pip stuff
+pip-wheel-metadata/
+pip-log.txt
